@@ -4,14 +4,14 @@
 
 Highlights:
 
-- 🌐 Real-time Messaging with Typing Indicators & Reactions
-- 📹 1-to-1 Chat , Video Calls with Screen Sharing & Recording
-- 🔐 JWT Authentication & Protected Routes
-- 🌍 Language Exchange Platform with 32 Unique UI Themes
-- ⚡ Tech Stack: Node + React + Express + MongoDB + TailwindCSS + TanStack Query
-- 🧠 Global State Management with Zustand
-- 🚨 Error Handling (Frontend & Backend)
-- 🎯 Built with Scalable Technologies like Stream
+- 🌐 Real-time Messaging with Typing Indicators & Reactions  
+- 📹 1-to-1 Chat, Video Calls with Screen Sharing & Recording  
+- 🔐 JWT Authentication & Protected Routes  
+- 🌍 Language Exchange Platform with 32 Unique UI Themes  
+- ⚡ Tech Stack: Node + React + Express + MongoDB + TailwindCSS + TanStack Query  
+- 🧠 Global State Management with Zustand  
+- 🚨 Error Handling (Frontend & Backend)  
+- 🎯 Built with Scalable Technologies like Stream  
 - ⏳ And much more!
 
 ---
