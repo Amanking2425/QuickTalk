@@ -1,18 +1,18 @@
- <h1 align="center">✨ QuickTalk Application ✨<h1>
+<h1 align="center">✨ Quick Chat and Video call : QuickTalk Application ✨</h1>
 
-<img width="1283" height="737" alt="image" src="https://github.com/user-attachments/assets/f22523b6-1a58-4d37-9909-ea843cc0931b" />
+![QuickTalk Screenshot](https://github.com/user-attachments/assets/f22523b6-1a58-4d37-9909-ea843cc0931b)
 
-Highlights:
+## Highlights
 
-- 🌐 Real-time Messaging with Typing Indicators & Reactions  
-- 📹 1-to-1 Chat, Video Calls with Screen Sharing & Recording  
-- 🔐 JWT Authentication & Protected Routes  
-- 🌍 Language Exchange Platform with 32 Unique UI Themes  
-- ⚡ Tech Stack: Node + React + Express + MongoDB + TailwindCSS + TanStack Query  
-- 🧠 Global State Management with Zustand  
-- 🚨 Error Handling (Frontend & Backend)  
-- 🎯 Built with Scalable Technologies like Stream  
-- ⏳ And much more!
+- 🌐 Real-time messaging, including typing indicators and emoji reactions.
+- 📹 One-to-one chat, video calls with screen sharing and recording.
+- 🔐 JWT authentication and protected routes.
+- 🌍 Language exchange platform with 32 unique UI themes.
+- ⚡ Tech stack: Node.js, React, Express, MongoDB, TailwindCSS, TanStack Query.
+- 🧠 Global state management using Zustand.
+- 🚨 Robust error handling on both frontend and backend.
+- 🎯 Built with scalable technologies like Stream.
+- ⏳ ...and much more!
 
 ---
 
