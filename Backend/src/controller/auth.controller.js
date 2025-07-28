@@ -31,7 +31,7 @@ export async function signup(req,res) {
             email,
             password,
             fullName,
-            avatar: randomAvatar
+            profilePic: randomAvatar
         });
 
 
