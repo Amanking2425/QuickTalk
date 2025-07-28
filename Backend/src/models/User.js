@@ -20,9 +20,15 @@ const userSchema = new mongoose.Schema({
         type: String,
         default: ""
     },
-    profilePicture:{
+    profilePic:{
+        // type: String,
+        // default: "",
         type: String,
-        default: "",
+      default: function () {
+        // Use a random number (or timestamp) as idx
+        const idx = Math.floor(Math.random() * 1000); 
+        return `https://api.samplefaces.com/face?width=200&${idx}`;
+      }
     },
     nativeLanguage:{
         type: String,
