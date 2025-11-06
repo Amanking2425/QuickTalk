@@ -24,6 +24,14 @@ app.use("/api/auth" , authRoutes); // Define a route for authentication
 app.use("/api/users", userRoutes);
 app.use("/api/chat", chatRoutes);
 
+//for deploying in vercel
+app.get('/',(req,res) =>{
+    res.send({
+        activeStatus : true,
+        error:false,
+    })
+})
+
 if(process.env.NODE_ENV === "production") {
     // Serve static files from the React app
     app.use(express.static(path.join(__dirname, "../Frontend/dist")));
