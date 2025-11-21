@@ -15,8 +15,8 @@ const PORT = process.env.PORT
 const __dirname = path.resolve(); // Get the current directory name
 
 app.use(cors({
-    origin : ["http://localhost:5173","https://quicktlk.netlify.app"], // Allow requests from this originq
-    credentials: true, // Allow cookies to be sent with requests
+    origin : ["http://localhost:5173","https://quicktlk.netlify.app/login"] // Allow requests from this originq
+    //credentials: true, // Allow cookies to be sent with requests
 }))
 app.use(express.json()); // Middleware to parse JSON bodies
 app.use(cookieParser()); // Middleware to parse cookies
