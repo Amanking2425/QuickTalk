@@ -13,10 +13,17 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 const __dirname = path.resolve();
 
+// Enhanced CORS configuration - FIXED
 app.use(cors({
-    origin: ["http://localhost:5173", "https://quicktlk.netlify.app"],
-    credentials: true, // UNCOMMENT THIS LINE
+    origin: ["http://localhost:5173", "https://quicktlk.netlify.app", "https://quick-talk-07.vercel.app"],
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization", "Cookie", "X-Requested-With"]
 }));
+
+// Handle preflight requests - ADD THIS
+app.options('*', cors());
+
 app.use(express.json());
 app.use(cookieParser());
 app.use("/api/auth", authRoutes);
@@ -41,10 +48,18 @@ app.get('/api/health', (req, res) => {
     });
 });
 
+// Add a test auth route for debugging - ADD THIS
+app.get('/api/auth/test', (req, res) => {
+    res.status(200).json({ 
+        message: "Auth route is working!",
+        timestamp: new Date().toISOString()
+    });
+});
+
 // Connect to database
 connectDB();
 
-// For Vercel deployment - remove the app.listen in production
+// For Vercel deployment
 if (process.env.NODE_ENV !== 'production') {
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}`);
